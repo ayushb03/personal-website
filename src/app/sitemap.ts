@@ -19,12 +19,12 @@ export default async function sitemap() {
     },
   ];
 
-  let blogs = posts.map((post) => ({
+  const blogs = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: post.publishedAt,
   }));
 
-  let routes = ["", "/blog", "/projects", "/about"].map((route) => ({
+  const routes = ["", "/blog", "/projects", "/about"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));

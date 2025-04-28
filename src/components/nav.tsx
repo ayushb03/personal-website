@@ -23,7 +23,7 @@ const navItems = [
 ];
 
 export function Navbar() {
-  let pathname = usePathname() || "/";
+  const pathname = usePathname() || "/";
 
   return (
     <nav className="py-4 mb-10 flex items-center justify-between border-b border-neutral-100 dark:border-neutral-900">
