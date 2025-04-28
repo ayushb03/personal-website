@@ -65,7 +65,7 @@ export default function ProjectsPage() {
             <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-2">
               {project.description}
             </p>
-            <div className="mb-2 flex flex-wrap gap-1.5">
+            <div className="mb-2 flex flex-wrap gap-2">
               {project.technologies.map((tech, techIndex) => (
                 <span
                   key={techIndex}

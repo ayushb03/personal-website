@@ -1,5 +1,4 @@
 import { Section } from "../../components/section";
-import { Card } from "../../components/card";
 
 export const metadata = {
   title: "About",
