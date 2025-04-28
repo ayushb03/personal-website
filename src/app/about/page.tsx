@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight mb-4">About Me</h1>
         <p className="text-neutral-600 dark:text-neutral-400">
-        Hi I'm Ayush, I mainly do AI research (Auto-regressive and other model paradigms, RL, Multi-agent systems, and what not), algorithms, and piano. 
+        Hi I&apos;m Ayush, I mainly do AI research (Auto-regressive and other model paradigms, RL, Multi-agent systems, and what not), algorithms, and piano. 
         I love building things. Hit me up if you want to chat, collaborate, work together or just say hi!
         </p>
       </div>

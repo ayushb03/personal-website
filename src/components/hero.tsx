@@ -11,11 +11,11 @@ export default function Hero() {
           Human (maybe a Cyborg in the future)
         </p>
         <p className="text-neutral-600 dark:text-neutral-400 max-w-md">
-        Hi I'm Ayush, I mainly do AI research (Auto-regressive and other model paradigms, 
+        Hi I&apos;m Ayush, I mainly do AI research (Auto-regressive and other model paradigms, 
         RL, Multi-agent systems, and what not), build products, and play piano. 
         Super open to collaborating, working together, or just shooting the breeze, 
-        whether you're in China, anywhere in Asia, the US, or beyond, I'm down to travel. 
-        Drop me a line, let's make something awesome!
+        whether you&apos;re in China, anywhere in Asia, the US, or beyond, I&apos;m down to travel. 
+        Drop me a line, let&apos;s make something awesome!
         </p>
       </div>
       <div className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800">
