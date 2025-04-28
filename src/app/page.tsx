@@ -18,10 +18,10 @@ export default function Home() {
             <ul className="list-disc pl-5 space-y-1">
               <li>
                 Designed and deployed end-to-end AI pipelines for document
-                chunking, extraction, and fine-tuned vision-language models
-                tailored to financial-services use cases.
+                chunking, extraction, RAG, and fine-tuning VLMs
+                tailored to finance use cases.
               </li>
-              <li>Built scalable REST APIs consumed by enterprise clients.</li>
+              <li>Built scalable APIs and services consumed by enterprise clients.</li>
             </ul>
           </ExperienceCard>
 
@@ -33,11 +33,7 @@ export default function Home() {
           >
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                Leading the AI platform team to automate procurement workflows
-                using advanced ML and NLP.
-              </li>
-              <li>
-                Reduced manual processing time by X% (metric if available).
+                Leading the AI platform team to automate procurement workflows.
               </li>
             </ul>
           </ExperienceCard>
