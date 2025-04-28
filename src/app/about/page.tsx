@@ -27,9 +27,9 @@ export default function AboutPage() {
           </p>
           <p>
             My journey in tech began during college where I studied Computer
-            Science, and I&apos;ve been continuously learning and growing since then.
-            I believe in writing clean, maintainable code and staying up-to-date
-            with the latest industry trends.
+            Science, and I&apos;ve been continuously learning and growing since
+            then. I believe in writing clean, maintainable code and staying
+            up-to-date with the latest industry trends.
           </p>
         </div>
       </Section>
@@ -180,30 +180,6 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </div>
-      </Section>
-
-      <Section title="Education">
-        <div className="space-y-4">
-          <Card
-            title="B.Tech, Computer Engineering"
-            subtitle="University of Mumbai, 2021 – 2025"
-          >
-            <p>
-              Core coursework in algorithms, machine learning, and computing
-              systems.
-            </p>
-          </Card>
-
-          <Card
-            title="Time Series Analysis Program"
-            subtitle="EPAM Systems Innovation Center, 2024 – 2025"
-          >
-            <p>
-              Advanced techniques for analyzing time-series data with
-              applications to financial modeling.
-            </p>
-          </Card>
         </div>
       </Section>
 
