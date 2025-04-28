@@ -50,7 +50,7 @@ export default function Home() {
           >
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                Investigated "delayed generalization" phenomena in
+                Investigated &quot;delayed generalization&quot; phenomena in
                 representation learning and proposed new architectural insights.
               </li>
             </ul>

@@ -98,7 +98,7 @@ export default function ProjectsPage() {
         >
           GitHub profile
         </Link>{" "}
-        if you're interested!)
+        if you&apos;re interested!)
       </p>
     </div>
   );

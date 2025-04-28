@@ -20,14 +20,14 @@ export default function AboutPage() {
       <Section title="Background">
         <div className="prose text-neutral-600 dark:text-neutral-400">
           <p>
-            I'm a software developer with a passion for building clean,
+            I&apos;m a software developer with a passion for building clean,
             efficient, and user-friendly applications. With expertise in React,
             TypeScript, and Next.js, I enjoy creating web experiences that
             prioritize performance and accessibility.
           </p>
           <p>
             My journey in tech began during college where I studied Computer
-            Science, and I've been continuously learning and growing since then.
+            Science, and I&apos;ve been continuously learning and growing since then.
             I believe in writing clean, maintainable code and staying up-to-date
             with the latest industry trends.
           </p>
