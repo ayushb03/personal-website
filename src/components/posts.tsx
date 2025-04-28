@@ -31,25 +31,27 @@ const posts: Post[] = [
 
 export function BlogPosts() {
   return (
-    <div className="flex flex-col gap-4">
-      <h2 className="text-xl font-medium mb-2">Recent Posts</h2>
+    <div className="space-y-6">
       {posts.map((post) => (
         <Link 
           key={post.slug}
           href={`/blog/${post.slug}`} 
-          className="group flex flex-col space-y-1 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors"
+          className="block p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
         >
-          <div className="flex justify-between items-center">
-            <h3 className="font-medium group-hover:text-blue-500 transition-colors">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 mb-2">
+            <h3 className="font-medium text-lg">
               {post.title}
             </h3>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
+            <time className="text-sm text-neutral-500 dark:text-neutral-400 tabular-nums">
               {post.date}
-            </span>
+            </time>
           </div>
-          <p className="text-neutral-600 dark:text-neutral-400">
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
             {post.description}
           </p>
+          <div className="mt-4 text-sm text-blue-600 dark:text-blue-400">
+            Read more →
+          </div>
         </Link>
       ))}
     </div>

@@ -7,14 +7,17 @@ export const metadata = {
 
 export default function BlogPage() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Blog
-      </h1>
-      <p className="mb-8">
-        I write about software development, tech trends, and my personal experiences.
-      </p>
+    <div className="space-y-8">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold tracking-tight mb-4">
+          Blog
+        </h1>
+        <p className="text-neutral-600 dark:text-neutral-400">
+          I write about software development, AI research, and my personal experiences.
+        </p>
+      </div>
+      
       <BlogPosts />
-    </section>
+    </div>
   )
 } 

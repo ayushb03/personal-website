@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Card } from '../../components/card'
 
 export const metadata = {
   title: 'Projects',
@@ -40,34 +41,35 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Projects
-      </h1>
-      <p className="mb-8">
-        Here are some of the projects I've worked on. You can find more on my 
-        <Link href="https://github.com/ayushb03" className="text-blue-500 hover:underline ml-1" target="_blank" rel="noopener noreferrer">
-          GitHub profile
-        </Link>.
-      </p>
+    <div className="space-y-8">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold tracking-tight mb-4">
+          Projects
+        </h1>
+        <p className="text-neutral-600 dark:text-neutral-400">
+          Here are some of the projects I've worked on. You can find more on my 
+          <Link href="https://github.com/ayushb03" className="text-blue-500 hover:underline ml-1" target="_blank" rel="noopener noreferrer">
+            GitHub profile
+          </Link>.
+        </p>
+      </div>
       
       <div className="grid gap-6">
         {projects.map((project, index) => (
           <div 
             key={index} 
-            className="border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors"
+            className="p-6 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
           >
             <h2 className="text-xl font-medium mb-2">{project.title}</h2>
             <p className="text-neutral-600 dark:text-neutral-400 mb-4">
               {project.description}
             </p>
             <div className="mb-4">
-              <h3 className="text-sm font-medium mb-2">Technologies used:</h3>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
                   <span 
                     key={techIndex} 
-                    className="px-2 py-1 bg-neutral-100 dark:bg-neutral-800 rounded text-sm"
+                    className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full"
                   >
                     {tech}
                   </span>
@@ -76,15 +78,15 @@ export default function ProjectsPage() {
             </div>
             <Link 
               href={project.link} 
-              className="text-blue-500 hover:underline" 
+              className="text-sm text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              View Project →
+              View Project ↗
             </Link>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   )
 } 

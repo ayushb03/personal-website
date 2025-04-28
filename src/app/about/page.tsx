@@ -1,3 +1,5 @@
+import { Section } from '../../components/section'
+
 export const metadata = {
   title: 'About',
   description: 'Learn more about me and my background.',
@@ -5,42 +7,99 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        About Me
-      </h1>
-      
+    <div className="space-y-8">
       <div className="mb-8">
-        <h2 className="text-xl font-medium mb-4">Background</h2>
-        <p className="mb-4">
-          I'm a software developer with a passion for building clean, efficient, and user-friendly applications. 
-          With expertise in React, TypeScript, and Next.js, I enjoy creating web experiences that prioritize 
-          performance and accessibility.
-        </p>
-        <p className="mb-4">
-          My journey in tech began during college where I studied Computer Science, and I've been continuously 
-          learning and growing since then. I believe in writing clean, maintainable code and staying up-to-date 
-          with the latest industry trends.
+        <h1 className="text-3xl font-bold tracking-tight mb-4">
+          About Me
+        </h1>
+        <p className="text-neutral-600 dark:text-neutral-400">
+          Software developer with a passion for building clean, efficient, and accessible technology.
         </p>
       </div>
       
-      <div className="mb-8">
-        <h2 className="text-xl font-medium mb-4">Skills</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Frontend: React, Next.js, TypeScript, HTML, CSS</li>
-          <li>UI Frameworks: Tailwind CSS, Material UI</li>
-          <li>Backend: Node.js, Express, PostgreSQL</li>
-          <li>Tools: Git, Docker, VS Code</li>
-        </ul>
-      </div>
-      
-      <div className="mb-8">
-        <h2 className="text-xl font-medium mb-4">Education</h2>
-        <div className="mb-4">
-          <h3 className="font-medium">Bachelor of Science in Computer Science</h3>
-          <p className="text-neutral-600 dark:text-neutral-400">University Name • 2018-2022</p>
+      <Section title="Background">
+        <div className="prose text-neutral-600 dark:text-neutral-400">
+          <p>
+            I'm a software developer with a passion for building clean, efficient, and user-friendly applications. 
+            With expertise in React, TypeScript, and Next.js, I enjoy creating web experiences that prioritize 
+            performance and accessibility.
+          </p>
+          <p>
+            My journey in tech began during college where I studied Computer Science, and I've been continuously 
+            learning and growing since then. I believe in writing clean, maintainable code and staying up-to-date 
+            with the latest industry trends.
+          </p>
         </div>
-      </div>
-    </section>
+      </Section>
+      
+      <Section title="Interests">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="p-4 rounded-lg bg-neutral-50 dark:bg-neutral-900">
+            <h3 className="font-medium mb-2">AI Research</h3>
+            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+              Exploring representation learning, generative models, and computer vision.
+            </p>
+          </div>
+          <div className="p-4 rounded-lg bg-neutral-50 dark:bg-neutral-900">
+            <h3 className="font-medium mb-2">Piano & Music</h3>
+            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+              Classical piano performance and music theory.
+            </p>
+          </div>
+          <div className="p-4 rounded-lg bg-neutral-50 dark:bg-neutral-900">
+            <h3 className="font-medium mb-2">Algorithms</h3>
+            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+              Competitive programming and algorithm optimization.
+            </p>
+          </div>
+        </div>
+      </Section>
+      
+      <Section title="Skills">
+        <div className="flex flex-col gap-4">
+          <div>
+            <h3 className="font-medium mb-2">Frontend</h3>
+            <div className="flex flex-wrap gap-2">
+              {['React', 'Next.js', 'TypeScript', 'HTML', 'CSS', 'Tailwind CSS'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="font-medium mb-2">Backend</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Node.js', 'Express', 'PostgreSQL', 'REST APIs', 'GraphQL'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="font-medium mb-2">Tools & Languages</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Git', 'Docker', 'VS Code', 'Python', 'JavaScript', 'TypeScript'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+      
+      <Section title="Education">
+        <div className="space-y-4">
+          <div className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+            <h3 className="font-medium">Bachelor of Science in Computer Science</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">University Name • 2018-2022</p>
+          </div>
+        </div>
+      </Section>
+    </div>
   )
 } 
