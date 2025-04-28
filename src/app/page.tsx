@@ -44,6 +44,10 @@ export default function Home() {
               <li>Investigated "delayed generalization" phenomena in representation learning and proposed new architectural insights.</li>
             </ul>
           </ExperienceCard>
+
+          <p className="text-center text-sm text-muted-foreground mt-4 italic">
+            ... and more
+          </p>
         </div>
       </Section>
     </>
