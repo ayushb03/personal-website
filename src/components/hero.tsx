@@ -10,7 +10,7 @@ export default function Hero() {
           Ayush Bodade
         </h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400">
-          Future and Beyond
+          Senior Year CS Undergrad
         </p>
         <p className="text-neutral-600 dark:text-neutral-400 max-w-md">
           I love computers and math. Also piano! Building AI systems that push

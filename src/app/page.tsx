@@ -50,8 +50,8 @@ export default function Home() {
           >
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                Investigated &quot;delayed generalization&quot; phenomena in
-                representation learning and proposed new architectural insights.
+                Investigate delayed generalization phenomena through Canonical Representation Hypothesis in
+                representation learning.
               </li>
             </ul>
           </ExperienceCard>
