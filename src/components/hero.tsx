@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-10 py-8 md:py-12">
       <div className="flex-1 space-y-4">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-          Ayush Bodade
+          Ayush
         </h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400">
           Human (maybe a Cyborg in the future)
