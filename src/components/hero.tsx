@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
       <div className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800">
         <Image
-          src="/me.png"
+          src="https://raw.githubusercontent.com/ayushb03/assets/main/idk_what_is_this.png"
           alt="Ayush Bodade profile picture"
           fill
           sizes="(max-width: 768px) 96px, 128px"
