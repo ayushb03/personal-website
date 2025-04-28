@@ -52,6 +52,38 @@ export default function Home() {
             </ul>
           </ExperienceCard>
 
+          <ExperienceCard
+            title="Research Intern - Spin-Neuro-Quantum-AI-group"
+            company="IIT Bombay"
+            period="Aug 2024 – Feb 2025"
+            location="Mumbai, India"
+          >
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                Developing and implementing spiking neural networks for neuromorphic hardware to mimic how brain learn using different modalities.
+              </li>
+              <li>
+                Tech Stack: Python, snnTorch, Pytorch, Numpy, Pandas, SNNs
+              </li>
+            </ul>
+          </ExperienceCard>
+
+          <ExperienceCard
+            title="Research Intern - Realtime Early Fault Detection in Electromagnetic Machines"
+            company="IIT Bombay"
+            period="Aug 2024 – Nov 2024"
+            location="Mumbai, India"
+          >
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                Developed a realtime early fault detection system aimed at predicting potential faults in electromagnetic machines using digital signals and shifts in magnetic flux.
+              </li>
+               <li>
+                Tech Stack: Python, PyTorch, Librosa, SciPy, Pandas, DSP
+               </li>
+            </ul>
+          </ExperienceCard>
+
           <p className="text-center text-sm text-muted-foreground mt-4 italic">
             ... and more
           </p>

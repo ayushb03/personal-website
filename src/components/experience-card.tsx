@@ -23,7 +23,7 @@ export function ExperienceCard({
           <p className="text-neutral-600 dark:text-neutral-400">{company}</p>
         </div>
         <div className="text-sm text-neutral-500 dark:text-neutral-500 mt-1 sm:mt-0 sm:text-right">
-          <div>{period}</div>
+          <div className="whitespace-nowrap">{period}</div>
           {location && <div>{location}</div>}
         </div>
       </div>
