@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
       
-      <Section title="Experience" id="experience">
+      <Section title="Background" id="background">
         <div className="space-y-2">
           <ExperienceCard 
             title="Founding Team AI Engineer" 
