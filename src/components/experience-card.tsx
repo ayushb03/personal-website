@@ -1,14 +1,20 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 interface ExperienceCardProps {
-  title: string
-  company: string
-  period: string
-  location?: string
-  children: ReactNode
+  title: string;
+  company: string;
+  period: string;
+  location?: string;
+  children: ReactNode;
 }
 
-export function ExperienceCard({ title, company, period, location, children }: ExperienceCardProps) {
+export function ExperienceCard({
+  title,
+  company,
+  period,
+  location,
+  children,
+}: ExperienceCardProps) {
   return (
     <div className="group mb-6 pb-6 border-b border-neutral-100 dark:border-neutral-900 last:border-0">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
@@ -25,5 +31,5 @@ export function ExperienceCard({ title, company, period, location, children }: E
         {children}
       </div>
     </div>
-  )
-} 
+  );
+}

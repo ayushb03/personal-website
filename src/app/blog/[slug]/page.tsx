@@ -1,17 +1,17 @@
-import { notFound } from 'next/navigation'
+import { notFound } from "next/navigation";
 
 type Params = {
   params: {
-    slug: string
-  }
-}
+    slug: string;
+  };
+};
 
 // This would typically come from a CMS or API
 const posts = [
   {
-    title: 'Getting Started with Next.js',
-    slug: 'getting-started-with-nextjs',
-    date: '2023-10-15',
+    title: "Getting Started with Next.js",
+    slug: "getting-started-with-nextjs",
+    date: "2023-10-15",
     content: `
       <h2>Introduction to Next.js</h2>
       <p>Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications.</p>
@@ -31,9 +31,9 @@ const posts = [
     `,
   },
   {
-    title: 'The Power of TypeScript',
-    slug: 'power-of-typescript',
-    date: '2023-11-02',
+    title: "The Power of TypeScript",
+    slug: "power-of-typescript",
+    date: "2023-11-02",
     content: `
       <h2>What is TypeScript?</h2>
       <p>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.</p>
@@ -53,9 +53,9 @@ const posts = [
     `,
   },
   {
-    title: 'Building with Tailwind CSS',
-    slug: 'building-with-tailwind',
-    date: '2023-12-10',
+    title: "Building with Tailwind CSS",
+    slug: "building-with-tailwind",
+    date: "2023-12-10",
     content: `
       <h2>Introduction to Tailwind CSS</h2>
       <p>Tailwind CSS is a utility-first CSS framework that allows you to build custom designs without leaving your HTML.</p>
@@ -74,37 +74,39 @@ const posts = [
       <pre><code>npm install -D tailwindcss postcss autoprefixer</code></pre>
     `,
   },
-]
+];
 
 export async function generateMetadata({ params }: Params) {
-  const post = posts.find(post => post.slug === params.slug)
-  
+  const post = posts.find((post) => post.slug === params.slug);
+
   if (!post) {
     return {
-      title: 'Post Not Found',
-    }
+      title: "Post Not Found",
+    };
   }
-  
+
   return {
     title: post.title,
     description: `Read about ${post.title}`,
-  }
+  };
 }
 
 export default function BlogPost({ params }: Params) {
-  const post = posts.find(post => post.slug === params.slug)
-  
+  const post = posts.find((post) => post.slug === params.slug);
+
   if (!post) {
-    notFound()
+    notFound();
   }
-  
+
   return (
     <article className="prose prose-neutral dark:prose-invert">
-      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">{post.title}</h1>
+      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
+        {post.title}
+      </h1>
       <div className="text-sm text-neutral-500 dark:text-neutral-400 mb-8">
         Published on {post.date}
       </div>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
-  )
-} 
+  );
+}

@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { FaArrowRight } from 'react-icons/fa6'
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -13,7 +13,8 @@ export default function Hero() {
           Future and Beyond
         </p>
         <p className="text-neutral-600 dark:text-neutral-400 max-w-md">
-          I love computers and math. Also piano! Building AI systems that push boundaries and solve real-world problems.
+          I love computers and math. Also piano! Building AI systems that push
+          boundaries and solve real-world problems.
         </p>
         <div className="flex gap-4 pt-2">
           <Link
@@ -37,5 +38,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  )
-} 
+  );
+}

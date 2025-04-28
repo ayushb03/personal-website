@@ -1,36 +1,34 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 export default {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'media',
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  darkMode: "media",
+  plugins: [require("@tailwindcss/typography")],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
       },
       typography: {
         DEFAULT: {
           css: {
-            'code::before': {
+            "code::before": {
               content: '""',
             },
-            'code::after': {
+            "code::after": {
               content: '""',
             },
             code: {
-              fontWeight: '400',
+              fontWeight: "400",
             },
           },
         },
       },
     },
   },
-} satisfies Config 
+} satisfies Config;

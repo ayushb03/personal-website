@@ -1,28 +1,28 @@
-import Link from 'next/link'
-import { FaXTwitter, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6'
+import Link from "next/link";
+import { FaXTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 const socialLinks = [
   {
-    name: 'Email',
-    url: 'mailto:ayushbodade1@gmail.com',
-    icon: <FaEnvelope className="w-4 h-4" />
+    name: "Email",
+    url: "mailto:ayushbodade1@gmail.com",
+    icon: <FaEnvelope className="w-4 h-4" />,
   },
   {
-    name: 'Twitter',
-    url: 'https://x.com/ayushb03',
-    icon: <FaXTwitter className="w-4 h-4" />
+    name: "Twitter",
+    url: "https://x.com/ayushb03",
+    icon: <FaXTwitter className="w-4 h-4" />,
   },
   {
-    name: 'GitHub',
-    url: 'https://github.com/ayushb03',
-    icon: <FaGithub className="w-4 h-4" />
+    name: "GitHub",
+    url: "https://github.com/ayushb03",
+    icon: <FaGithub className="w-4 h-4" />,
   },
   {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/ayushbodade/',
-    icon: <FaLinkedin className="w-4 h-4" />
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/ayushbodade/",
+    icon: <FaLinkedin className="w-4 h-4" />,
   },
-]
+];
 
 export default function Footer() {
   return (
@@ -40,7 +40,7 @@ export default function Footer() {
               <Link
                 key={link.name}
                 href={link.url}
-                target={link.name !== 'Email' ? "_blank" : ""}
+                target={link.name !== "Email" ? "_blank" : ""}
                 rel="noopener noreferrer"
                 className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800"
                 aria-label={link.name}
@@ -55,5 +55,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
-} 
+  );
+}
