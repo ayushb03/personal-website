@@ -13,7 +13,7 @@ export default function Home() {
           <ExperienceCard 
             title="Founding Team AI Engineer" 
             company="Unsiloed AI"
-            period="Jan 2025 – Apr 2025"
+            period="Jan 2025 – Present"
             location="San Francisco, CA"
           >
             <ul className="list-disc pl-5 space-y-1">
