@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="space-y-2">
           <div className="font-medium">Ayush Bodade</div>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
-            Future and Beyond
+            Build the Future and Beyond
           </p>
         </div>
         <div className="flex flex-col gap-2">
