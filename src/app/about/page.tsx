@@ -1,4 +1,5 @@
 import { Section } from '../../components/section'
+import { Card } from '../../components/card'
 
 export const metadata = {
   title: 'About',
@@ -89,15 +90,57 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
+          
+          <div>
+            <h3 className="font-medium mb-2">Languages & Frameworks</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Python', 'PyTorch', 'snnTorch', 'LangChain', 'Flask', 'OpenCV', 'Librosa'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="font-medium mb-2">AI & ML</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Vision-Language Models', 'Spiking Neural Networks', 'Energy-Based Models', 'RAG', 'MCMC'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="font-medium mb-2">DevOps & Tools</h3>
+            <div className="flex flex-wrap gap-2">
+              {['Docker', 'TensorRT', 'ONNX-Runtime', 'FAISS', 'Git', 'CI/CD'].map(skill => (
+                <span key={skill} className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </Section>
       
       <Section title="Education">
         <div className="space-y-4">
-          <div className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
-            <h3 className="font-medium">Bachelor of Science in Computer Science</h3>
-            <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">University Name • 2018-2022</p>
-          </div>
+          <Card
+            title="B.Tech, Computer Engineering"
+            subtitle="University of Mumbai, 2021 – 2025"
+          >
+            <p>Core coursework in algorithms, machine learning, and computing systems.</p>
+          </Card>
+          
+          <Card
+            title="Time Series Analysis Program"
+            subtitle="EPAM Systems Innovation Center, 2024 – 2025"
+          >
+            <p>Advanced techniques for analyzing time-series data with applications to financial modeling.</p>
+          </Card>
         </div>
       </Section>
     </div>
