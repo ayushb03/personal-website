@@ -18,24 +18,7 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <Section title="Background">
-        <div className="prose text-neutral-600 dark:text-neutral-400">
-          <p>
-            I&apos;m a software developer with a passion for building clean,
-            efficient, and user-friendly applications. With expertise in React,
-            TypeScript, and Next.js, I enjoy creating web experiences that
-            prioritize performance and accessibility.
-          </p>
-          <p>
-            My journey in tech began during college where I studied Computer
-            Science, and I&apos;ve been continuously learning and growing since
-            then. I believe in writing clean, maintainable code and staying
-            up-to-date with the latest industry trends.
-          </p>
-        </div>
-      </Section>
-
-      <Section title="Achievements">
+      <Section title="Small Wins">
         <div className="space-y-4">
           <div className="flex items-start space-x-3">
             <div className="w-1 h-1 rounded-full bg-neutral-400 dark:bg-neutral-600 mt-2"></div>
