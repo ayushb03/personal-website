@@ -1,6 +1,14 @@
 import Hero from "../components/hero";
 import { Section } from "../components/section";
 import { ExperienceCard } from "../components/experience-card";
+import { Metadata } from "next";
+import { generatePageMetadata } from "../components/seo";
+
+export const metadata: Metadata = generatePageMetadata({
+  title: "Ayush Bodade | AI Engineer and Researcher",
+  description: "Ayush Bodade is an AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at Unsiloed AI, MIT, and IIT Bombay.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -41,7 +49,7 @@ export default function Home() {
           <ExperienceCard
             title="Undergraduate Researcher"
             company="MIT"
-            period="Nov 2024 – Feb 2025"
+            period="Nov 2024 – Jan 2025"
             location="Cambridge, MA"
           >
             <ul className="list-disc pl-5 space-y-1">

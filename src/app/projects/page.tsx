@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { Metadata } from "next";
+import { generatePageMetadata } from "../../components/seo";
 
-export const metadata = {
-  title: "Projects",
-  description: "Check out my latest projects and work.",
-};
+export const metadata: Metadata = generatePageMetadata({
+  title: "Projects | Ayush Bodade",
+  description: "Explore my portfolio of AI research projects including YOLOv11 optimizations, energy-based models, and vision-language systems.",
+  path: "/projects",
+});
 
 const projects = [
   {

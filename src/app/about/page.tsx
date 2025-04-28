@@ -1,9 +1,12 @@
 import { Section } from "../../components/section";
+import { Metadata } from "next";
+import { generatePageMetadata } from "../../components/seo";
 
-export const metadata = {
-  title: "About",
-  description: "Learn more about me and my background.",
-};
+export const metadata: Metadata = generatePageMetadata({
+  title: "About | Ayush Bodade",
+  description: "Learn about Ayush Bodade - AI Engineer and Researcher with expertise in multi-agent systems, machine learning, and a background in competitive programming and music.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

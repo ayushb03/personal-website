@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ayush Bodade Personal Website
 
-## Getting Started
+A Next.js-based personal website showcasing Ayush's portfolio, projects, and blog.
 
-First, run the development server:
+## SEO Optimization Guide
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This website has been optimized for search engines with the following features:
+
+### Core SEO Elements
+
+- **Metadata**: Each page has customized metadata including title, description, and Open Graph tags
+- **Structured Data**: JSON-LD structured data for better search result displays
+- **Sitemap**: Dynamic sitemap generation at `/sitemap.xml`
+- **Robots.txt**: Customized robots.txt to guide search engine crawlers
+- **Canonical URLs**: Proper canonical URL implementation to avoid duplicate content issues
+
+### Image Optimization
+
+- Using Next.js Image component with proper sizing and formats
+- Alt text for all images for better accessibility and SEO
+
+### Page Speed Optimization
+
+- Font optimization with display swap
+- Image optimization and lazy loading
+- Proper caching headers for static assets
+- Minified CSS and JS
+
+## Maintaining SEO
+
+### Adding New Pages
+
+When adding new pages:
+
+1. Use the `generatePageMetadata` function from `src/components/seo.tsx`
+2. Add the page to the sitemap in `src/app/sitemap.ts`
+3. Include proper structured data if applicable
+
+Example:
+
+```tsx
+import { Metadata } from "next";
+import { generatePageMetadata } from "../../components/seo";
+
+export const metadata: Metadata = generatePageMetadata({
+  title: "Page Title | Ayush Bodade",
+  description: "Page description with keywords and context",
+  path: "/page-path",
+});
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Adding Blog Posts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+When adding new blog posts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Create a new directory under `/blog/[slug]`
+2. Use the `ArticleStructuredData` component
+3. Follow the existing pattern for SEO metadata
 
-## Learn More
+## Performance Monitoring
 
-To learn more about Next.js, take a look at the following resources:
+- Use Vercel Analytics to monitor page performance
+- Regularly check Google Search Console for issues and ranking
+- Test with Lighthouse and PageSpeed Insights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Vercel Analytics and Speed Insights

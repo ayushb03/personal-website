@@ -1,33 +1,41 @@
-export default async function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : "http://localhost:3000";
+import { MetadataRoute } from 'next'
 
-  // Sample blog posts from our data
-  const posts = [
+// Replace with your actual production domain if it's not ayushbodade.vercel.app
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ayushbodade.vercel.app';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  // Add static routes here
+  const staticRoutes = [
     {
-      slug: "getting-started-with-nextjs",
-      publishedAt: "2023-10-15",
+      url: '/',
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
     },
     {
-      slug: "power-of-typescript",
-      publishedAt: "2023-11-02",
+      url: '/projects',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     },
     {
-      slug: "building-with-tailwind",
-      publishedAt: "2023-12-10",
-    },
+      url: '/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }
   ];
 
-  const blogs = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.publishedAt,
-  }));
+  // TODO: Add dynamic routes (e.g., blog posts) by fetching their paths
+  // const dynamicRoutes = await fetchDynamicPaths(); 
 
-  const routes = ["", "/blog", "/projects", "/about"].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString().split("T")[0],
+  // Map the routes with full URLs
+  const routes = staticRoutes.map((route) => ({
+    url: `${baseUrl}${route.url}`,
+    lastModified: route.lastModified,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
   }));
-
-  return [...routes, ...blogs];
+ 
+  return routes;
 }
