@@ -45,8 +45,8 @@ const projects = [
   {
     title: "ColPali-Qwen2 OCR & Document Search",
     description:
-      "Combined vision-language encoders for multilingual text extraction and retrieval (CVPR '24).",
-    technologies: ["Vision-Language Models", "OCR", "Document Search", "CVPR"],
+      "Combined vision-language encoders for multilingual text extraction and retrieval.",
+    technologies: ["Vision-Language Models", "OCR", "Document Search"],
     link: "#",
   },
 ];
