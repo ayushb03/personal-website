@@ -19,21 +19,21 @@ const projects = [
     link: '#',
   },
   {
-    title: 'ColPali-Qwen2 OCR & Document Search',
-    description: 'Combined vision-language encoders for multilingual text extraction and retrieval (CVPR \'24).',
-    technologies: ['Vision-Language Models', 'OCR', 'Document Search', 'CVPR'],
-    link: '#',
-  },
-  // {
-  //   title: 'Houdini Multi-Search RAG Agent',
-  //   description: 'Streamlit-based RAG system indexing arXiv, Wikipedia, and custom PDF uploads via FAISS.',
-  //   technologies: ['Streamlit', 'RAG', 'FAISS', 'arXiv', 'Wikipedia'],
-  //   link: '#',
-  // },
-  {
     title: 'Concrete Score Matching for Discrete Data',
     description: 'Implemented CSM with Metropolis-Hastings sampling to model discrete score functions.',
     technologies: ['Concrete Score Matching', 'Metropolis-Hastings', 'Discrete Data'],
+    link: '#',
+  },
+  {
+    title: 'Expandable Subspace Ensemble for Class-Incremental Learning',
+    description: 'Implemented subspace expansion for incremental learning on CIFAR-10, retaining previous class knowledge without forgetting (CVPR \'24).',
+    technologies: ['PyTorch', 'NumPy', 'Class-Incremental Learning'],
+    link: '#',
+  },
+  {
+    title: 'ColPali-Qwen2 OCR & Document Search',
+    description: 'Combined vision-language encoders for multilingual text extraction and retrieval (CVPR \'24).',
+    technologies: ['Vision-Language Models', 'OCR', 'Document Search', 'CVPR'],
     link: '#',
   },
 ]
@@ -45,12 +45,6 @@ export default function ProjectsPage() {
         <h1 className="text-3xl font-bold tracking-tight mb-4">
           Projects
         </h1>
-        <p className="text-neutral-600 dark:text-neutral-400">
-          Here are some of the projects I've worked on. You can find more on my 
-          <Link href="https://github.com/ayushb03" className="text-blue-500 hover:underline ml-1" target="_blank" rel="noopener noreferrer">
-            GitHub profile
-          </Link>.
-        </p>
       </div>
       
       <div className="space-y-6">
@@ -83,6 +77,9 @@ export default function ProjectsPage() {
           </div>
         ))}
       </div>
+      <p className="text-center text-sm text-neutral-500 dark:text-neutral-500 mt-6 italic">
+        ... and more (check out my <Link href="https://github.com/ayushb03" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">GitHub profile</Link> if you're interested!)
+      </p>
     </div>
   )
 } 
