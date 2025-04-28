@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { generatePageMetadata } from "../components/seo";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Ayush Bodade | AI Engineer and Researcher",
+  title: "Ayush | AI Engineer and Researcher",
   description: "Ayush Bodade is an AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at Unsiloed AI, MIT, and IIT Bombay.",
   path: "/",
 });
