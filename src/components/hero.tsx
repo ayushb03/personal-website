@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -12,10 +14,10 @@ export default function Hero() {
         </p>
         <p className="text-neutral-600 dark:text-neutral-400 max-w-md">
         Hi I&apos;m Ayush, I mainly do AI research (Auto-regressive and other model paradigms, 
-        RL, Multi-agent systems, and what not), build products, and play piano. 
+        RL, Multi-agent systems, and more), build products, and play piano. 
         Super open to collaborating, working together, or just shooting the breeze, 
         whether you&apos;re in China, anywhere in Asia, the US, or beyond, I&apos;m down to travel. 
-        Drop me a line, let&apos;s make something awesome!
+        Drop me a line on <a href="https://twitter.com/ayushb03" target="_blank" rel="noopener noreferrer" className="inline-block align-middle mx-1"><FaXTwitter size={20}/></a> or <a href="mailto:ayushbodade@gmail.com" target="_blank" rel="noopener noreferrer" className="inline-block align-middle mx-1"><MdEmail size={20}/></a>, let&apos;s make something awesome!
         </p>
       </div>
       <div className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800">
