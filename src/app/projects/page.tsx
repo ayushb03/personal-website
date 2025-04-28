@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Card } from '../../components/card'
 
 export const metadata = {
   title: 'Projects',
@@ -25,12 +24,12 @@ const projects = [
     technologies: ['Vision-Language Models', 'OCR', 'Document Search', 'CVPR'],
     link: '#',
   },
-  {
-    title: 'Houdini Multi-Search RAG Agent',
-    description: 'Streamlit-based RAG system indexing arXiv, Wikipedia, and custom PDF uploads via FAISS.',
-    technologies: ['Streamlit', 'RAG', 'FAISS', 'arXiv', 'Wikipedia'],
-    link: '#',
-  },
+  // {
+  //   title: 'Houdini Multi-Search RAG Agent',
+  //   description: 'Streamlit-based RAG system indexing arXiv, Wikipedia, and custom PDF uploads via FAISS.',
+  //   technologies: ['Streamlit', 'RAG', 'FAISS', 'arXiv', 'Wikipedia'],
+  //   link: '#',
+  // },
   {
     title: 'Concrete Score Matching for Discrete Data',
     description: 'Implemented CSM with Metropolis-Hastings sampling to model discrete score functions.',
@@ -54,36 +53,33 @@ export default function ProjectsPage() {
         </p>
       </div>
       
-      <div className="grid gap-6">
+      <div className="space-y-6">
         {projects.map((project, index) => (
-          <div 
-            key={index} 
-            className="p-6 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
-          >
-            <h2 className="text-xl font-medium mb-2">{project.title}</h2>
-            <p className="text-neutral-600 dark:text-neutral-400 mb-4">
+          <div key={index}>
+            <h2 className="text-lg font-medium mb-1">{project.title}</h2>
+            <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-2">
               {project.description}
             </p>
-            <div className="mb-4">
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, techIndex) => (
-                  <span 
-                    key={techIndex} 
-                    className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-sm rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+            <div className="mb-2 flex flex-wrap gap-1.5">
+              {project.technologies.map((tech, techIndex) => (
+                <span 
+                  key={techIndex} 
+                  className="px-2 py-0.5 bg-neutral-100 dark:bg-neutral-800 text-xs rounded-full text-neutral-600 dark:text-neutral-400"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
-            <Link 
-              href={project.link} 
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              View Project ↗
-            </Link>
+            {project.link !== '#' && (
+              <Link 
+                href={project.link} 
+                className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                View Project
+              </Link>
+            )}
           </div>
         ))}
       </div>
