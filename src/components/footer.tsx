@@ -29,7 +29,7 @@ export default function Footer() {
     <footer className="mt-20 py-8 border-t border-neutral-100 dark:border-neutral-900">
       <div className="flex flex-col md:flex-row md:justify-between gap-6 md:items-center">
         <div className="space-y-2">
-          <div className="font-medium">Ayush Bodade</div>
+          <div className="font-medium">Ayush</div>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
             Build the Future and Beyond
           </p>
@@ -50,7 +50,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-xs text-neutral-500 dark:text-neutral-500 text-center md:text-right">
-            &copy; {new Date().getFullYear()} Ayush Bodade. All rights reserved.
+            &copy; {new Date().getFullYear()} Ayush. All rights reserved.
           </p>
         </div>
       </div>
