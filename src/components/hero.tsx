@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -16,26 +17,19 @@ export default function Hero() {
           boundaries and solve real-world problems.
         </p>
         <div className="flex gap-4 pt-2">
-          <Link
-            href="/projects"
-            className="flex items-center gap-2 px-4 py-2 rounded-md bg-black text-white dark:bg-white dark:text-black font-medium transition-all hover:opacity-90"
-          >
-            View Projects <FaArrowRight className="w-3 h-3" />
-          </Link>
-          <Link
-            href="/about"
-            className="flex items-center gap-2 px-4 py-2 rounded-md border border-neutral-200 dark:border-neutral-800 font-medium transition-all hover:bg-neutral-100 dark:hover:bg-neutral-800"
-          >
-            About Me
-          </Link>
+          {/* Buttons removed */}
         </div>
       </div>
-      <div className="w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800">
-        {/* Replace with your own image */}
-        <div className="w-full h-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-xl font-bold">
-          AB
-        </div>
+      <div className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800">
+        <Image 
+          src="/profile.jpg"
+          alt="Ayush Bodade profile picture"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
       </div>
     </div>
   );
 }
+
