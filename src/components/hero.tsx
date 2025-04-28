@@ -1,6 +1,4 @@
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -16,13 +14,10 @@ export default function Hero() {
           I love computers and math. Also piano! Building AI systems that push
           boundaries and solve real-world problems.
         </p>
-        <div className="flex gap-4 pt-2">
-          {/* Buttons removed */}
-        </div>
       </div>
       <div className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800">
-        <Image 
-          src="/profile.jpg"
+        <Image
+          src="/me.png"
           alt="Ayush Bodade profile picture"
           layout="fill"
           objectFit="cover"
@@ -32,4 +27,3 @@ export default function Hero() {
     </div>
   );
 }
-
