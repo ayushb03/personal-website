@@ -12,8 +12,9 @@ export default function AboutPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight mb-4">About Me</h1>
         <p className="text-neutral-600 dark:text-neutral-400">
-          Software developer passionate about building clean, efficient technology. 
-          My interests lie at the intersection of AI research (especially representation learning and generative models), 
+          Software developer passionate about building clean, efficient
+          technology. My interests lie at the intersection of AI research
+          (especially representation learning and generative models),
           algorithms, and music, particularly classical piano.
         </p>
       </div>
