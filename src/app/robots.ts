@@ -10,6 +10,7 @@ export default function robots() {
         allow: ["/"],
         disallow: ["/api/", "/_next/"],
       },
+      // Chinese crawlers
       {
         userAgent: "Baiduspider",
         allow: ["/"],
@@ -27,6 +28,37 @@ export default function robots() {
       },
       {
         userAgent: "YisouSpider",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      // US and European crawlers
+      {
+        userAgent: "Googlebot",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "Googlebot-Image",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "bingbot",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "Yandex",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "DuckDuckBot",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "facebookexternalhit",
         allow: ["/"],
         disallow: ["/api/", "/_next/"],
       },

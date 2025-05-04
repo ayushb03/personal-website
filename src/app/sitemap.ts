@@ -42,6 +42,82 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    },
+    // Add French language variants
+    {
+      url: '/fr',
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+    },
+    {
+      url: '/fr/projects',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: '/fr/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    // Add German language variants
+    {
+      url: '/de',
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+    },
+    {
+      url: '/de/projects',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: '/de/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    // Add Spanish language variants
+    {
+      url: '/es',
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+    },
+    {
+      url: '/es/projects',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: '/es/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    // Add Italian language variants
+    {
+      url: '/it',
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+    },
+    {
+      url: '/it/projects',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: '/it/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     }
   ];
 

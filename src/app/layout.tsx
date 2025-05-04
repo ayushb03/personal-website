@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Ayush Bodade",
   },
   description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
-  keywords: ["AI", "RL", "Multi-agent systems", "Machine Learning", "Ayush Bodade", "Portfolio", "Software Engineer", "Developer", "Full Stack", "Next.js", "React", "TypeScript", "Artificial Intelligence", "Research", "人工智能", "机器学习", "深度学习", "软件工程师", "开发者"],
+  keywords: ["AI", "RL", "Multi-agent systems", "Machine Learning", "Ayush Bodade", "Portfolio", "Software Engineer", "Developer", "Full Stack", "Next.js", "React", "TypeScript", "Artificial Intelligence", "Research", "人工智能", "机器学习", "深度学习", "软件工程师", "开发者", "Intelligence Artificielle", "Maschinelles Lernen", "Aprendizaje Automático", "Intelligenza Artificiale"],
   authors: [{ name: "Ayush Bodade", url: baseUrl }],
   creator: "Ayush Bodade",
   publisher: "Ayush Bodade",
@@ -79,6 +79,10 @@ export const metadata: Metadata = {
     languages: {
       'en': `${baseUrl}/en`,
       'zh-CN': `${baseUrl}/zh-cn`,
+      'fr': `${baseUrl}/fr`,
+      'de': `${baseUrl}/de`,
+      'es': `${baseUrl}/es`,
+      'it': `${baseUrl}/it`,
     },
   },
   applicationName: "Ayush Bodade Portfolio",
@@ -90,6 +94,10 @@ export const metadata: Metadata = {
     "360-site-verification": "ADD_YOUR_360_VERIFICATION_CODE_HERE",
     "shenma-site-verification": "ADD_YOUR_SHENMA_VERIFICATION_CODE_HERE",
     "mobile-agent": "format=html5; url=" + baseUrl,
+    "google-site-verification": "ADD_YOUR_GOOGLE_VERIFICATION_CODE_HERE",
+    "msvalidate.01": "ADD_YOUR_BING_VERIFICATION_CODE_HERE",
+    "yandex-verification": "ADD_YOUR_YANDEX_VERIFICATION_CODE_HERE",
+    "gdpr-compliance": "true",
   },
 };
 
@@ -119,10 +127,19 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <link rel="manifest" href="/manifest.json" />
-        <meta http-equiv="Cache-Control" content="max-age=86400" />
+        <meta httpEquiv="Cache-Control" content="max-age=86400" />
         <meta name="applicable-device" content="pc,mobile" />
         <meta name="MobileOptimized" content="width" />
         <meta name="HandheldFriendly" content="true" />
+        <meta name="geo.region" content="US, EU, CN" />
+        <meta name="geo.placename" content="Global" />
+        <link rel="alternate" hrefLang="x-default" href={baseUrl} />
+        <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
+        <link rel="alternate" hrefLang="zh-cn" href={`${baseUrl}/zh-cn`} />
+        <link rel="alternate" hrefLang="fr" href={`${baseUrl}/fr`} />
+        <link rel="alternate" hrefLang="de" href={`${baseUrl}/de`} />
+        <link rel="alternate" hrefLang="es" href={`${baseUrl}/es`} />
+        <link rel="alternate" hrefLang="it" href={`${baseUrl}/it`} />
         <PersonStructuredData />
         <WebsiteStructuredData />
       </head>
