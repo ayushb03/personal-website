@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Ayush Bodade",
   },
   description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
-  keywords: ["AI", "RL", "Multi-agent systems", "Machine Learning", "Ayush Bodade", "Portfolio", "Software Engineer", "Developer", "Full Stack", "Next.js", "React", "TypeScript", "Artificial Intelligence", "Research"],
+  keywords: ["AI", "RL", "Multi-agent systems", "Machine Learning", "Ayush Bodade", "Portfolio", "Software Engineer", "Developer", "Full Stack", "Next.js", "React", "TypeScript", "Artificial Intelligence", "Research", "人工智能", "机器学习", "深度学习", "软件工程师", "开发者"],
   authors: [{ name: "Ayush Bodade", url: baseUrl }],
   creator: "Ayush Bodade",
   publisher: "Ayush Bodade",
@@ -78,11 +78,19 @@ export const metadata: Metadata = {
     canonical: baseUrl,
     languages: {
       'en': `${baseUrl}/en`,
+      'zh-CN': `${baseUrl}/zh-cn`,
     },
   },
   applicationName: "Ayush Bodade Portfolio",
   referrer: "origin-when-cross-origin",
   category: "technology",
+  other: {
+    "baidu-site-verification": "ADD_YOUR_BAIDU_VERIFICATION_CODE_HERE",
+    "sogou_site_verification": "ADD_YOUR_SOGOU_VERIFICATION_CODE_HERE",
+    "360-site-verification": "ADD_YOUR_360_VERIFICATION_CODE_HERE",
+    "shenma-site-verification": "ADD_YOUR_SHENMA_VERIFICATION_CODE_HERE",
+    "mobile-agent": "format=html5; url=" + baseUrl,
+  },
 };
 
 export const viewport: Viewport = {
@@ -111,6 +119,10 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <link rel="manifest" href="/manifest.json" />
+        <meta http-equiv="Cache-Control" content="max-age=86400" />
+        <meta name="applicable-device" content="pc,mobile" />
+        <meta name="MobileOptimized" content="width" />
+        <meta name="HandheldFriendly" content="true" />
         <PersonStructuredData />
         <WebsiteStructuredData />
       </head>

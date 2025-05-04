@@ -10,6 +10,26 @@ export default function robots() {
         allow: ["/"],
         disallow: ["/api/", "/_next/"],
       },
+      {
+        userAgent: "Baiduspider",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "Sogou web spider",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "360Spider",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
+      {
+        userAgent: "YisouSpider",
+        allow: ["/"],
+        disallow: ["/api/", "/_next/"],
+      },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,
