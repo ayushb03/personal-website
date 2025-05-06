@@ -20,6 +20,10 @@ const navItems = [
     path: "/about",
     name: "About",
   },
+  {
+    path: "https://drive.google.com/file/d/1hP32R7VK1aXcdZTXeOEjP8WyG18Sy4m0/view?usp=sharing",
+    name: "CV",
+  },
 ];
 
 export function Navbar() {
@@ -36,6 +40,22 @@ export function Navbar() {
       <div className="flex gap-1 sm:gap-2">
         {navItems.map(({ path, name }) => {
           const isActive = pathname === path;
+          const isExternal = path.startsWith('http');
+          
+          if (isExternal) {
+            return (
+              <a
+                key={path}
+                href={path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`px-3 py-2 text-sm rounded-md transition-all text-neutral-600 dark:text-neutral-400 hover:bg-neutral-50 dark:hover:bg-neutral-900`}
+              >
+                {name}
+              </a>
+            );
+          }
+          
           return (
             <Link
               key={path}
