@@ -19,11 +19,7 @@ const navItems = [
   {
     path: "/about",
     name: "About",
-  },
-  {
-    path: "https://drive.google.com/file/d/1hP32R7VK1aXcdZTXeOEjP8WyG18Sy4m0/view?usp=sharing",
-    name: "CV",
-  },
+  }
 ];
 
 export function Navbar() {
