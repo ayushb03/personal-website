@@ -1,16 +1,32 @@
 {
-  "name": "Ayush Bodade | AI Engineer and Researcher",
+  "name": "Ayush Bodade - AI Engineer & Researcher",
   "short_name": "Ayush Bodade",
+  "description": "AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning",
+  "start_url": "/en",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/ayushb03/assets/main/idk_what_is_this.png",
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "description": "Personal website of Ayush Bodade, AI Engineer and Researcher"
+  "categories": ["technology", "education", "business"],
+  "lang": "en",
+  "dir": "ltr"
 } 
