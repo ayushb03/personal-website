@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { generatePageMetadata } from "../components/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -7,11 +6,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope, FaGlobe } from "react-icons/fa";
 
-export const metadata: Metadata = generatePageMetadata({
+export const metadata: Metadata = {
   title: "Ayush Bodade - AI Engineer & Researcher",
   description: "Ayush Bodade is an AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.",
-  path: "/",
-});
+};
 
 export default function Home() {
   return (
