@@ -12,14 +12,6 @@ const navItems = [
   //   path: '/blog',
   //   name: 'Blog',
   // },
-  {
-    path: "/projects",
-    name: "Projects",
-  },
-  {
-    path: "/about",
-    name: "About",
-  }
 ];
 
 export function Navbar() {
