@@ -76,10 +76,9 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
-            Hi I&apos;m Ayush, I mainly do AI research (Auto-regressive and other model paradigms, 
-            RL, Multi-agent systems, and more), build products, and play piano. 
-            Super open to collaborating, working together, or just shooting the breeze, 
-            whether you&apos;re in China, anywhere in Asia, the US, or beyond, I&apos;m down to travel.
+            Hi I&apos;m Ayush, I build products, do AI research (Auto-regressive and other model paradigms, 
+            RL, Multi-agent systems, and more), and play piano. 
+            Just shoot me a mail, or DM me on X and we can build something worthwhile!
           </p>
         </CardContent>
       </Card>
