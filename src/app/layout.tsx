@@ -1,6 +1,10 @@
-import "./globals.css";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Geist as GeistSans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Navbar } from "../components/nav";
+import Script from "next/script";
+import "./globals.css";
 
 const geistSans = GeistSans({
   variable: "--font-geist-sans",
@@ -9,8 +13,65 @@ const geistSans = GeistSans({
 });
 
 export const metadata: Metadata = {
-  title: "Ayush Bodade - AI Engineer & Researcher",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_VERCEL_URL
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+    : 'http://localhost:3000'),
+  title: {
+    default: "Ayush Bodade | Portfolio",
+    template: "%s | Ayush Bodade",
+  },
   description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
+  keywords: ["AI", "Machine Learning", "Ayush Bodade", "Portfolio", "Software Engineer", "Research"],
+  authors: [{ name: "Ayush Bodade" }],
+  creator: "Ayush Bodade",
+  publisher: "Ayush Bodade",
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  openGraph: {
+    title: "Ayush Bodade - AI Engineer and Researcher",
+    description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
+    url: process.env.NEXT_PUBLIC_VERCEL_URL
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+      : 'http://localhost:3000',
+    siteName: "Ayush Bodade Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ayush Bodade - AI Engineer and Researcher",
+    description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  applicationName: "Ayush Bodade Portfolio",
+  referrer: "origin-when-cross-origin",
+  category: "technology",
+  other: {
+    "mobile-agent": "format=html5; url=" + (process.env.NEXT_PUBLIC_VERCEL_URL
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+      : 'http://localhost:3000'),
+    "google-site-verification": "YOUR_GOOGLE_VERIFICATION_CODE",
+    "msvalidate.01": "YOUR_BING_VERIFICATION_CODE",
+    "yandex-verification": "YOUR_YANDEX_VERIFICATION_CODE",
+    "baidu-site-verification": "YOUR_BAIDU_VERIFICATION_CODE",
+    "sogou_site_verification": "YOUR_SOGOU_VERIFICATION_CODE",
+    "360-site-verification": "YOUR_360_VERIFICATION_CODE",
+    "shenma-site-verification": "YOUR_SHENMA_VERIFICATION_CODE",
+  },
 };
 
 export default function RootLayout({
@@ -18,5 +79,43 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <html
+      lang="en"
+      className={`text-black bg-white dark:text-white dark:bg-black ${geistSans.variable}`}
+    >
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta httpEquiv="Cache-Control" content="max-age=86400" />
+        <meta name="applicable-device" content="pc,mobile" />
+        <meta name="MobileOptimized" content="width" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="geo.region" content="US, EU, CN" />
+        <meta name="geo.placename" content="Global" />
+      </head>
+      <body className="antialiased max-w-4xl mx-auto px-4 py-8">
+        <main className="min-h-screen">
+          <Navbar />
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </main>
+        
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'GA_MEASUREMENT_ID');
+          `}
+        </Script>
+      </body>
+    </html>
+  );
 }
