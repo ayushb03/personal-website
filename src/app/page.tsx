@@ -21,7 +21,11 @@ export default function Home() {
         <CardHeader className="text-center pb-4">
           <div className="flex justify-center mb-4">
             <Avatar className="w-24 h-24 md:w-32 md:h-32">
-              <AvatarImage src="https://raw.githubusercontent.com/ayushb03/assets/main/idk_what_is_this.png" alt="Ayush Bodade" />
+              <AvatarImage 
+                src="https://raw.githubusercontent.com/ayushb03/assets/main/idk_what_is_this.png" 
+                alt="Ayush Bodade" 
+                className="object-cover"
+              />
               <AvatarFallback>AB</AvatarFallback>
             </Avatar>
           </div>
