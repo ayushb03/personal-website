@@ -8,16 +8,16 @@ import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope, FaGlobe } from "react-icon
 
 export const metadata: Metadata = {
   title: 'Ayush Bodade - AI Engineer & Researcher',
-  description: 'Ayush Bodade is an AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
+  description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
   openGraph: {
     title: 'Ayush Bodade - AI Engineer & Researcher',
-    description: 'Ayush Bodade is an AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
+    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Ayush Bodade - AI Engineer & Researcher',
-    description: 'Ayush Bodade is an AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
+    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
   },
 };
 
