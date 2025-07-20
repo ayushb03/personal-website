@@ -66,12 +66,6 @@ export default function Home() {
                 LinkedIn
               </a>
             </Button>
-            <Button variant="outline" size="sm" asChild>
-              <a href="http://ayush-ai-hq.vercel.app" target="_blank" rel="noopener noreferrer">
-                <FaGlobe className="mr-2 h-4 w-4" />
-                Website
-              </a>
-            </Button>
           </div>
         </CardHeader>
         <CardContent>
