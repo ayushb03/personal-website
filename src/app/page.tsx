@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope, FaGlobe } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: 'Ayush Bodade - AI Engineer & Researcher',
