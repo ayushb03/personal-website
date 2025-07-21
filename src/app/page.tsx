@@ -562,7 +562,7 @@ export default function Home() {
             <li><strong>CodeUncode 2024:</strong> Secured 49th position out of 2000 participants in an ACM-ICPC-style algorithmic contest.</li>
             <li><strong>Selected for Tsinghua University HTGR Summer School</strong></li>
             <li><strong>Selected for 2025 Tsinghua Summer School for International Construction</strong></li>
-            <li><strong>Selected for "Design Futures·Shared Vision" 2025 International Summer Program</strong>, Academy of Arts & Design, Tsinghua University</li>
+            <li><strong>Selected for &quot;Design Futures·Shared Vision&quot; 2025 International Summer Program</strong>, Academy of Arts & Design, Tsinghua University</li>
             <li><strong>Selected for 2025 Tsinghua-Princeton-CI Summer School on Combustion</strong></li>
             <li><strong>Selected for 2025 Tsinghua University IEDA Summer School - Industrial Engineering and Data Analytics</strong></li>
             <li><strong>Selected for Tsinghua University Brain and Intelligence Laboratory “Music Brain Science Summer Training Camp”</strong></li>
