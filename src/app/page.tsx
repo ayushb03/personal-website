@@ -8,16 +8,16 @@ import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: 'Ayush Bodade - AI Engineer & Researcher',
-  description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
+  description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
   openGraph: {
     title: 'Ayush Bodade - AI Engineer & Researcher',
-    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
+    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Ayush Bodade - AI Engineer & Researcher',
-    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at QX Labs, Unsiloed AI, MIT, and IIT Bombay.',
+    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
   },
 };
 
@@ -89,7 +89,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
               <div>
                 <h3 className="font-semibold text-lg">Founding AI Engineer</h3>
-                <p className="text-muted-foreground">QX Labs</p>
+                <p className="text-muted-foreground">[REDACTED]</p>
                 <p className="text-sm text-muted-foreground">London, UK</p>
               </div>
               <Badge variant="secondary">05/2025 - Present</Badge>
