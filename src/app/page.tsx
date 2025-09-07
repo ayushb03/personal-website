@@ -60,7 +60,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
-            My heart's beating for now.
+            My heart&apos;s beating for now.
           </p>
         </CardContent>
       </Card>
