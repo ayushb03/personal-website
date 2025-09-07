@@ -58,7 +58,7 @@ export default function Home() {
             <Button variant="outline" size="sm" asChild>
               <a href="https://shinkahq.com" target="_blank" rel="noopener noreferrer">
                 <span className="mr-2 h-4 w-4 text-xs font-bold">S</span>
-                ShinkaHQ
+                Shinka
               </a>
             </Button>
           </div>
@@ -89,7 +89,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
                   >
-                    ShinkaHQ
+                    Shinka
                   </a>
                 </p>
                 <p className="text-sm text-muted-foreground">Remote</p>
@@ -97,7 +97,7 @@ export default function Home() {
               <Badge variant="secondary">Sept 2025 - Present</Badge>
             </div>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-              <li>Founded and leading ShinkaHQ, an AI-powered startup focused on building innovative solutions for modern businesses.</li>
+              <li>Founded and leading Shinka, an AI-powered startup focused on building innovative solutions for modern businesses.</li>
               <li>Developing cutting-edge AI technologies and products that solve real-world problems across various industries.</li>
             </ul>
           </div>
