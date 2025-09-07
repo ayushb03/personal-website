@@ -33,32 +33,27 @@ export default function Home() {
           <div className="flex justify-center gap-2 mt-4">
             <Button variant="outline" size="sm" asChild>
               <a href="mailto:ayush@shinkahq.com" target="_blank" rel="noopener noreferrer">
-                <FaEnvelope className="mr-2 h-4 w-4" />
-                Email
+                <FaEnvelope className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="https://x.com/ayushb03" target="_blank" rel="noopener noreferrer">
-                <FaTwitter className="mr-2 h-4 w-4" />
-                Twitter
+                <FaTwitter className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="https://github.com/ayushb03" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="mr-2 h-4 w-4" />
-                GitHub
+                <FaGithub className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="https://www.linkedin.com/in/ayushbodade/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="mr-2 h-4 w-4" />
-                LinkedIn
+                <FaLinkedin className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="https://shinkahq.com" target="_blank" rel="noopener noreferrer">
-                <span className="mr-2 h-4 w-4 text-xs font-bold">S</span>
-                Shinka
+                <span className="h-4 w-4 text-xs font-bold">S</span>
               </a>
             </Button>
           </div>
