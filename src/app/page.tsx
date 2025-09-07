@@ -2,22 +2,21 @@ import { Metadata } from "next";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: 'Ayush Bodade - AI Engineer & Researcher',
-  description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
+  title: 'Ayush - AI Engineer & Researcher',
+  description: 'Ayush: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
   openGraph: {
-    title: 'Ayush Bodade - AI Engineer & Researcher',
-    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
+    title: 'Ayush - AI Engineer & Researcher',
+    description: 'Ayush: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ayush Bodade - AI Engineer & Researcher',
-    description: 'Ayush Bodade: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
+    title: 'Ayush - AI Engineer & Researcher',
+    description: 'Ayush: AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning with experience at [REDACTED], Unsiloed AI, MIT, and IIT Bombay.',
   },
 };
 
@@ -27,19 +26,9 @@ export default function Home() {
       {/* Hero Section */}
       <Card className="border-0 shadow-none">
         <CardHeader className="text-center pb-4">
-          <div className="flex justify-center mb-4">
-            <Avatar className="w-24 h-24 md:w-32 md:h-32">
-              <AvatarImage 
-                src="https://raw.githubusercontent.com/ayushb03/assets/main/idk_what_is_this.png" 
-                alt="Ayush Bodade" 
-                className="object-cover"
-              />
-              <AvatarFallback>AB</AvatarFallback>
-            </Avatar>
-          </div>
-          <CardTitle className="text-3xl md:text-4xl font-bold">Ayush Bodade</CardTitle>
+          <CardTitle className="text-3xl md:text-4xl font-bold">Ayush</CardTitle>
           <CardDescription className="text-xl text-muted-foreground">
-            AI Engineer & Researcher
+            AI, Agents, RL, Vision. My hands play piano.
           </CardDescription>
           <div className="flex justify-center gap-2 mt-4">
             <Button variant="outline" size="sm" asChild>
@@ -76,18 +65,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
-            Hi I&apos;m Ayush, I build products, do AI research (Auto-regressive and other model paradigms, 
-            RL, Multi-agent systems, and more), and play piano. Check out{" "}
-            <a 
-              href="https://shinkahq.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline font-medium"
-            >
-              Shinka
-            </a>
-            ! 
-            Just shoot me a mail, or DM me on X and we can build something worthwhile!
+            My heart's beating for now.
           </p>
         </CardContent>
       </Card>

@@ -17,33 +17,33 @@ export const metadata: Metadata = {
     ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : 'http://localhost:3000'),
   title: {
-    default: "Ayush Bodade | Portfolio",
-    template: "%s | Ayush Bodade",
+    default: "Ayush | Portfolio",
+    template: "%s | Ayush",
   },
-  description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
-  keywords: ["AI", "Machine Learning", "Ayush Bodade", "Portfolio", "Software Engineer", "Research"],
-  authors: [{ name: "Ayush Bodade" }],
-  creator: "Ayush Bodade",
-  publisher: "Ayush Bodade",
+  description: "Ayush - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
+  keywords: ["AI", "Machine Learning", "Ayush", "Portfolio", "Software Engineer", "Research"],
+  authors: [{ name: "Ayush" }],
+  creator: "Ayush",
+  publisher: "Ayush",
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
   },
   openGraph: {
-    title: "Ayush Bodade - AI Engineer and Researcher",
-    description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
+    title: "Ayush - AI Engineer and Researcher",
+    description: "Ayush - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
     url: process.env.NEXT_PUBLIC_VERCEL_URL
       ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
       : 'http://localhost:3000',
-    siteName: "Ayush Bodade Portfolio",
+    siteName: "Ayush Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ayush Bodade - AI Engineer and Researcher",
-    description: "Ayush Bodade - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
+    title: "Ayush - AI Engineer and Researcher",
+    description: "Ayush - AI Engineer and Researcher specializing in multi-agent systems, machine learning, and reinforcement learning.",
   },
   robots: {
     index: true,
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  applicationName: "Ayush Bodade Portfolio",
+  applicationName: "Ayush Portfolio",
   referrer: "origin-when-cross-origin",
   category: "technology",
   other: {
