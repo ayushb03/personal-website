@@ -92,7 +92,7 @@ export default function Home() {
                     Shinka
                   </a>
                 </p>
-                <p className="text-sm text-muted-foreground">Remote</p>
+                <p className="text-sm text-muted-foreground">Earth</p>
               </div>
               <Badge variant="secondary">Sept 2025 - Present</Badge>
             </div>
