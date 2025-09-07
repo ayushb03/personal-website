@@ -28,7 +28,7 @@ export default function Home() {
         <CardHeader className="text-center pb-4">
           <CardTitle className="text-3xl md:text-4xl font-bold">Ayush</CardTitle>
           <CardDescription className="text-xl text-muted-foreground">
-            AI, Agents, RL, Vision. My hands play piano.
+            AI, Agents, RL, Vision. Hands play piano.
           </CardDescription>
           <div className="flex justify-center gap-2 mt-4">
             <Button variant="outline" size="sm" asChild>
