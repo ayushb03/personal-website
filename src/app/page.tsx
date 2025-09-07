@@ -94,7 +94,7 @@ export default function Home() {
                 </p>
                 <p className="text-sm text-muted-foreground">Remote</p>
               </div>
-              <Badge variant="secondary">2024 - Present</Badge>
+              <Badge variant="secondary">Sept 2025 - Present</Badge>
             </div>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
               <li>Founded and leading ShinkaHQ, an AI-powered startup focused on building innovative solutions for modern businesses.</li>
