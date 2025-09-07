@@ -81,7 +81,7 @@ export default function Home() {
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
               <div>
-                <h3 className="font-semibold text-lg">Founder & CEO</h3>
+                <h3 className="font-semibold text-lg">Founder</h3>
                 <p className="text-muted-foreground">
                   <a 
                     href="https://shinkahq.com" 
@@ -97,8 +97,7 @@ export default function Home() {
               <Badge variant="secondary">Sept 2025 - Present</Badge>
             </div>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-              <li>Founded and leading Shinka, an AI-powered startup focused on building innovative solutions for modern businesses.</li>
-              <li>Developing cutting-edge AI technologies and products that solve real-world problems across various industries.</li>
+              <li>???</li>
             </ul>
           </div>
 
