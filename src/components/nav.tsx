@@ -9,7 +9,7 @@ export function Navbar() {
         href="/"
         className="font-bold text-lg tracking-tight hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
       >
-        AB
+        A
       </Link>
     </nav>
   );
