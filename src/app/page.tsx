@@ -43,7 +43,7 @@ export default function Home() {
           </CardDescription>
           <div className="flex justify-center gap-2 mt-4">
             <Button variant="outline" size="sm" asChild>
-              <a href="mailto:ayushbodade1@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:ayush@shinkahq.com" target="_blank" rel="noopener noreferrer">
                 <FaEnvelope className="mr-2 h-4 w-4" />
                 Email
               </a>
@@ -66,12 +66,27 @@ export default function Home() {
                 LinkedIn
               </a>
             </Button>
+            <Button variant="outline" size="sm" asChild>
+              <a href="https://shinkahq.com" target="_blank" rel="noopener noreferrer">
+                <span className="mr-2 h-4 w-4 text-xs font-bold">S</span>
+                ShinkaHQ
+              </a>
+            </Button>
           </div>
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto">
             Hi I&apos;m Ayush, I build products, do AI research (Auto-regressive and other model paradigms, 
-            RL, Multi-agent systems, and more), and play piano. 
+            RL, Multi-agent systems, and more), and play piano. Check out{" "}
+            <a 
+              href="https://shinkahq.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline font-medium"
+            >
+              Shinka
+            </a>
+            ! 
             Just shoot me a mail, or DM me on X and we can build something worthwhile!
           </p>
         </CardContent>
@@ -85,6 +100,32 @@ export default function Home() {
           <CardTitle className="text-2xl">Work Experience</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
+              <div>
+                <h3 className="font-semibold text-lg">Founder & CEO</h3>
+                <p className="text-muted-foreground">
+                  <a 
+                    href="https://shinkahq.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                  >
+                    ShinkaHQ
+                  </a>
+                </p>
+                <p className="text-sm text-muted-foreground">Remote</p>
+              </div>
+              <Badge variant="secondary">2024 - Present</Badge>
+            </div>
+            <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+              <li>Founded and leading ShinkaHQ, an AI-powered startup focused on building innovative solutions for modern businesses.</li>
+              <li>Developing cutting-edge AI technologies and products that solve real-world problems across various industries.</li>
+            </ul>
+          </div>
+
+          <Separator />
+
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
               <div>
