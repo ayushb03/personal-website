@@ -300,7 +300,7 @@ export default function Home() {
       {/* Projects */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl">Projects</CardTitle>
+          <CardTitle className="text-2xl">Projects (made quite some time ago)</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-4">
