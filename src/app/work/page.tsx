@@ -2,16 +2,16 @@ import { Metadata } from "next";
 import AnalyticsWrapper from "@/components/AnalyticsWrapper";
 
 export const metadata: Metadata = {
-  title: 'Work Experience - Ayush',
+  title: 'Work - Ayush',
   description: 'Professional work experience and research positions',
   openGraph: {
-    title: 'Work Experience - Ayush',
+    title: 'Work - Ayush',
     description: 'Professional work experience and research positions',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Work Experience - Ayush',
+    title: 'Work - Ayush',
     description: 'Professional work experience and research positions',
   },
 };
