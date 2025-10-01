@@ -3,7 +3,7 @@ import { Geist as GeistSans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "../components/nav";
-import Script from "next/script";
+import AnalyticsWrapper from "../components/AnalyticsWrapper";
 import "./globals.css";
 
 const geistSans = GeistSans({
@@ -94,27 +94,15 @@ export default function RootLayout({
         <meta name="geo.region" content="US, EU, CN" />
         <meta name="geo.placename" content="Global" />
       </head>
-      <body className="antialiased max-w-4xl mx-auto px-4 py-8">
-        <main className="min-h-screen">
-          <Navbar />
-          {children}
-          <Analytics />
-          <SpeedInsights />
-        </main>
-        
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'GA_MEASUREMENT_ID');
-          `}
-        </Script>
+      <body className="antialiased min-h-screen">
+        <AnalyticsWrapper>
+          <main className="min-h-screen bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-950 dark:to-neutral-900">
+            <Navbar />
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </AnalyticsWrapper>
       </body>
     </html>
   );
