@@ -68,42 +68,6 @@ html {
   min-width: 360px;
 }
 
-/* Custom cozy enhancements */
-body {
-  font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
-}
-
-/* Smooth transitions for all interactive elements */
-* {
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
-}
-
-/* Enhance text rendering */
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  letter-spacing: -0.025em;
-}
-
-/* Subtle hover effects */
-a {
-  position: relative;
-}
-
-a:hover {
-  transform: translateY(-1px);
-}
-
-/* Custom selection colors */
-::selection {
-  background-color: rgba(163, 163, 163, 0.2);
-  color: inherit;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 .prose .anchor {
   @apply absolute invisible no-underline;
 

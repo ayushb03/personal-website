@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <nav className="py-8 mb-4 flex items-center justify-center">
+    <nav className="py-4 mb-8 flex items-center justify-between border-b border-neutral-100 dark:border-neutral-900">
       <Link
         href="/"
-        className="text-xs uppercase tracking-widest text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors font-medium"
+        className="font-bold text-lg tracking-tight hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
       >
-        Home
+        A
       </Link>
     </nav>
   );
