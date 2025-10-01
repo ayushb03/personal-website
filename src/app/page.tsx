@@ -83,45 +83,6 @@ export default function Home() {
             </div>
           </div>
 
-      {/* Selected Work */}
-      <div className="space-y-6">
-        <h2 className="text-sm uppercase tracking-wide text-neutral-500 dark:text-neutral-400 font-medium">
-          Selected Work
-        </h2>
-        <div className="space-y-8">
-          
-          <div>
-            <h3 className="font-medium text-neutral-900 dark:text-neutral-100 mb-2">
-              Agentic Knowledge Graph System for Private Equity
-            </h3>
-            <ul className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-2 pl-4">
-              <li>• Architected a production-ready system with intelligent agent-based query processing, multi-database integration (Graph, Vector, NoSQL), and streaming responses.</li>
-              <li>• Developed modular AI agents (delegator, Cypher, semantic search) enabling automatic routing, parallel query execution, and optimized database interactions.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-medium text-neutral-900 dark:text-neutral-100 mb-2">
-              Optimized YOLOv11 for Document Layout Recognition
-            </h3>
-            <ul className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-2 pl-4">
-              <li>• Fine-tuned YOLOv11 on DocLayNet for multi-class document layout detection (captions, footnotes, formulas).</li>
-              <li>• Accelerated inference using TensorRT, ONNXRUNTIME, and OpenVINO for scalable batch processing.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-medium text-neutral-900 dark:text-neutral-100 mb-2">
-              Discrete Walk-Jump Sampling for Antibody Discovery
-            </h3>
-            <ul className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-2 pl-4">
-              <li>• Implemented energy-based models with Langevin MCMC and contrastive divergence to generate high-quality antibody sequences.</li>
-              <li>• Optimized sampling efficiency and sequence diversity for protein discovery tasks.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
      {/* Honors & Achievements */}
      <div className="space-y-6">
         <h2 className="text-sm uppercase tracking-wide text-neutral-500 dark:text-neutral-400 font-medium">

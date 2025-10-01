@@ -12,10 +12,16 @@ export function Navbar() {
         Home
       </Link>
       <Link
-        href="/detailed-view"
+        href="/work"
         className="text-xs uppercase tracking-widest text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors font-medium"
       >
-        Detailed View
+        Work
+      </Link>
+      <Link
+        href="/projects"
+        className="text-xs uppercase tracking-widest text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors font-medium"
+      >
+        Projects
       </Link>
     </nav>
   );
