@@ -54,6 +54,14 @@ export default function Home() {
           >
             github
           </a>
+          <a 
+            href="https://calendly.com/ayushbodade1/online-meet-up" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+          >
+            meet
+          </a>
             </div>
           </div>
 
