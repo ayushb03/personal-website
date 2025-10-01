@@ -117,7 +117,7 @@ export default function Work() {
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">Sardar Patel Institute of Technology, Mumbai, India</p>
               <ul className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-2 pl-4">
-                <li>• Led problem-solving sessions and mentored 16 master's students, enhancing their grasp of advanced algorithms.</li>
+                <li>• Led problem-solving sessions and mentored 16 master&apos;s students, enhancing their grasp of advanced algorithms.</li>
                 <li>• Designed problem sets based on research papers and lectures to promote critical thinking beyond the curriculum.</li>
               </ul>
             </div>

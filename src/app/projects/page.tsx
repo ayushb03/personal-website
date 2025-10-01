@@ -77,7 +77,7 @@ export default function Projects() {
               </h3>
               <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-3 italic">PyTorch, colpali-engine, qwen-vl-utils</p>
               <ul className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-2 pl-4">
-                <li>• Built an OCR and document retrieval system based on the "ColPali" vision-language model for multilingual text extraction.</li>
+                <li>• Built an OCR and document retrieval system based on the &ldquo;ColPali&rdquo; vision-language model for multilingual text extraction.</li>
               </ul>
             </div>
 
