@@ -149,21 +149,7 @@ export default function Work() {
                 <li>• Tech stack: Python, PyTorch, Librosa, SciPy, Pandas, DSP.</li>
               </ul>
             </div>
-
-            <div>
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="font-medium text-neutral-900 dark:text-neutral-100">
-                  Research Intern, Multi-Modal Sentiment Analysis
-                </h3>
-                <span className="text-sm text-neutral-500 dark:text-neutral-400">02/2024–11/2024</span>
-              </div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">Sardar Patel Institute of Technology, Mumbai, India</p>
-              <ul className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed space-y-2 pl-4">
-                <li>• Built a multi-modal sentiment analysis architecture for modality robustness and adaptability to diverse use cases.</li>
-                <li>• Tech stack: PyTorch, OpenCV, Librosa, NLTK, Bash.</li>
-              </ul>
-            </div>
-
+            
             <div>
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-medium text-neutral-900 dark:text-neutral-100">
