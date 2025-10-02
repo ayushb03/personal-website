@@ -24,7 +24,7 @@ export default function Work() {
         {/* Work Experience */}
         <div className="space-y-6">
           <h2 className="text-sm uppercase tracking-wide text-neutral-500 dark:text-neutral-400 font-medium">
-            Work Experience
+            Work
           </h2>
           <div className="space-y-8">
             
